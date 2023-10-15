@@ -1,6 +1,7 @@
 This is an extension of the speech classifier program developed by Thomas Davidson et al. (https://github.com/t-davidson/hate-speech-and-offensive-language/tree/master). As Thomas Davidson's repository is no longer maintained, we decided to create our own, added modifications, and tested it with different datasets, including speech data from Berkeley (https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech)
 
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
+This site was built using [GitHub Pages](https://pages.github.com/).
+
 
 There are 6 files in the "speech_classifier" folder:
 
