@@ -57,7 +57,7 @@ Trained model files:
 The TXT files are named "original_hate_vsbalanced_hate.txt" and "original_hate+offensive_vs_balanced_hate.txt" and contain quality scores of the classifier program. <br> We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
 
 **Cross Validation**:
-There are two files: 
+There are two files
 1. generate_cv_data.py and run_cross_validation.py. 
 - These two files are used for performing k-fold cross-validation. 
 - Currently, k is set to 5, but users can set it to different numbers to perform k-fold cross-validation.
@@ -67,13 +67,17 @@ The steps are:
 1. python generate_cv_data.py
 1. python run_cross_validation.py
 
-- Input: ../data/berkeley_speech_dataset.csv
-- Output: ../data/balanced_dataset.csv
+1. The first program: generate_group_csv.py is used to produce training data with the desired number for each targeted group. This is the same program as before.
+  - Input: ../data/berkeley_speech_dataset.csv
+  - Output: ../data/balanced_dataset.csv
+1. The second program: generate_cv_data.py is used to split the files into k+1 pieces, in preparetion for k-fold validation. With one piece used as analysis dataset, and 5 other pieces used as training datasets. This step will be repeated k times so each piece of data will have its chance to be the analysis dataset. This program will also generate the .pkl files needed for each trained dataset. <br>
 
+- Input: ../data/balanced_dataset.csv
+- Output: 
+Analysis sets: ../cv_data/balanced_cvanalysis_fold1.csv ../cv_data/balanced_cvanalysis_fold2.csv ... ../cv_data/balanced_cvanalysis_foldk.csv <br>
+Training sets: balanced_cvtrain_fold1.csv balanced_cvtrain_fold2.csv ... balanced_cvtrain_foldk.csv <br>
+Pkl files: balanced_cvtrain_fold1_idf.pkl balanced_cvtrain_fold1_model.pkl balanced_cvtrain_fold1_oth.pkl balanced_cvtrain_fold1_pos.pkl balanced_cvtrain_fold1_tfidf.pkl ... balanced_cvtrain_foldk_tfidf.pkl <br>
 
-- **Analysis sets**: ../cv_data/balanced_cvanalysis_fold1.csv, ../cv_data/balanced_cvanalysis_fold2.csv, ... ../cv_data/balanced_cvanalysis_foldk.csv
-- **Training sets**: balanced_cvtrain_fold1.csv, balanced_cvtrain_fold2.csv, ... balanced_cvtrain_foldk.csv
-- **Pkl files**: balanced_cvtrain_fold1_idf.pkl, balanced_cvtrain_fold1_model.pkl, balanced_cvtrain_fold1_oth.pkl, balanced_cvtrain_fold1_pos.pkl, balanced_cvtrain_fold1_tfidf.pkl, ... balanced_cvtrain_foldk_tfidf.pkl
 
 **Program for running the actual cross-validation**: <br>
 run_cross_validation.py will run through all the analysis sets and training sets for each fold and generate quality scores for each file. These quality scores include accuracy, precision, recall, and F1 score.
