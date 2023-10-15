@@ -103,9 +103,11 @@ We use the "berkeley_speech_dataset.csv" to create various three different scena
 > - Configuration for scenario 2: 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian
 > - Configuration for scenario 3: 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian
 
-| Left-aligned              | Center-aligned           | Right-aligned        |
-| :------------------------ | :-----------------------: | -------------------: |
-| Configuration for scenario 1: 9000 black, 500 women, 200 trans, 150 gay, 150 lesbian | Configuration for scenario 2: 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian | Configuration for scenario 3: 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian |
+| Scenario                  | Configuration for scenario 1 | Configuration for scenario 2 | Configuration for scenario 3 |
+| :------------------------  | :--------------------------- | :--------------------------- | :--------------------------- |
+| 9000 black, 500 women,     | 9000 women, 500 black,       | 3300 black, 3300 women,      |
+| 200 trans, 150 gay, 150    | 200 trans, 150 gay, 150     | 2800 trans, 100 gay, 500    |
+| lesbian                   | lesbian                     | lesbian                     |
 
 
 
