@@ -13,7 +13,7 @@ There are 6 files in the "speech_classifier" folder:
 
 All .py files can be executed with a simple command like this:
 
-**python program_name.py**
+``` **python program_name.py**``` 
 
 The first program: **generate_group_csv.py** reads the speech data available in the "data" folder (provided by Berkeley) and selects the desired number of groups to be analyzed. Different scenarios can be created for testing by altering the number of each targeted group in the file according to the "data_name" variable specified. For simplicity in our description, we will use the "balanced" data name as an example.
 
