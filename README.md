@@ -50,7 +50,7 @@ Trained model files:
 
 - Input CSV files to be analyzed: all files located in ../input
 - Output: The program will produce one output file for every file it finds in the input directory, listing the predicted class for each tweet/text within each file.
-- <br> It will also generate two PDF files and two TXT files. The PDF files are named "original_hate_vs_balanced_hate.pdf" and "original_hate+offensive_vs_balanced_hate.pdf" and contain confusion matrices when analyzing "labeled_data.csv." 
+- It will also generate two PDF files and two TXT files. The PDF files are named "original_hate_vs_balanced_hate.pdf" and "original_hate+offensive_vs_balanced_hate.pdf" and contain confusion matrices when analyzing "labeled_data.csv." 
 
 The TXT files are named "original_hate_vsbalanced_hate.txt" and "original_hate+offensive_vs_balanced_hate.txt" and contain quality scores of the classifier program. <br> We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
 
@@ -103,6 +103,9 @@ We use the "berkeley_speech_dataset.csv" to create various three different scena
 > - Configuration for scenario 2: 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian
 > - Configuration for scenario 3: 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian
 
+| Left-aligned              | Center-aligned           | Right-aligned        |
+| :------------------------ | :-----------------------: | -------------------: |
+| Configuration for scenario 1: 9000 black, 500 women, 200 trans, 150 gay, 150 lesbian | Configuration for scenario 2: 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian | Configuration for scenario 3: 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian |
 
 
 
