@@ -3,12 +3,12 @@ This is an extension of the speech classifier program developed by Thomas Davids
 
 There are 6 files in the "speech_classifier" folder:
 
-generate_group_csv.py
-count_groups.py
-generate_trained_model.ipynb
-speech_classifier.py
-generate_cv_data.py
-run_cross_validation.py
+* generate_group_csv.py
+* count_groups.py
+* generate_trained_model.ipynb
+* speech_classifier.py
+* generate_cv_data.py
+* run_cross_validation.py
 
 
 All .py files can be executed with a simple command like this:
