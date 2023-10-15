@@ -73,9 +73,8 @@ The steps are:
  
 
 - **The second program**: generate_cv_data.py is used to split the files into k+1 pieces, in preparetion for k-fold validation. With one piece used as analysis dataset, and 5 other pieces used as training datasets. This step will be repeated k times so each piece of data will have its chance to be the analysis dataset. This program will also generate the .pkl files needed for each trained dataset. <br>
-
-- Input: ../data/balanced_dataset.csv
-- Output: 
+  - Input: ../data/balanced_dataset.csv
+  - Output: 
 Analysis sets: ../cv_data/balanced_cvanalysis_fold1.csv ../cv_data/balanced_cvanalysis_fold2.csv ... ../cv_data/balanced_cvanalysis_foldk.csv <br>
 Training sets: balanced_cvtrain_fold1.csv balanced_cvtrain_fold2.csv ... balanced_cvtrain_foldk.csv <br>
 Pkl files: balanced_cvtrain_fold1_idf.pkl balanced_cvtrain_fold1_model.pkl balanced_cvtrain_fold1_oth.pkl balanced_cvtrain_fold1_pos.pkl balanced_cvtrain_fold1_tfidf.pkl ... balanced_cvtrain_foldk_tfidf.pkl <br>
