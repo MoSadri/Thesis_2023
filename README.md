@@ -17,8 +17,8 @@ All .py files can be executed with a simple command like this:
 
 The first program: **generate_group_csv.py** reads the speech data available in the "data" folder (provided by Berkeley) and selects the desired number of groups to be analyzed. Different scenarios can be created for testing by altering the number of each targeted group in the file according to the "data_name" variable specified. For simplicity in our description, we will use the "balanced" data name as an example.
 
-- [x]Input: ../data/berkeley_speech_dataset.csv
-- [x]Output: ../data/balanced_dataset.csv
+- Input: ../data/berkeley_speech_dataset.csv
+- Output: ../data/balanced_dataset.csv
 
 The second program: **count_groups.py** is a simple script to print out the actual number of groups resulting from the first program. As there are overlaps between different targeted groups, it is useful to obtain the percentage of each targeted group produced.
 
@@ -78,7 +78,7 @@ Output: ../cv_output/balanced_cvresults_fold1.txt, ../cv_output/balanced_cvresul
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ⭐️⭐️ **Data Used**
-Our program uses the newest Python version (3.11 at the time of our testing), which is an update from version 2.7 in the original TDavidson run. We obtained the trained data files (the .pkl files) from TDavidson's repository, repickled so they can be used in our program. These files are prefixed with "original_" and located in the data folder. Unfortunately, these files are trained models, and the CSV files used for generating these files aren't available, so it is not possible to modify these files.
+[!NOTE] Our program uses the newest Python version (3.11 at the time of our testing), which is an update from version 2.7 in the original TDavidson run. We obtained the trained data files (the .pkl files) from TDavidson's repository, repickled so they can be used in our program. These files are prefixed with "original_" and located in the data folder. Unfortunately, these files are trained models, and the CSV files used for generating these files aren't available, so it is not possible to modify these files.
 
 TDavidson also uses an analysis set named "labeled_data.csv," which is a set of tweets with manually labeled classes ("Hate," "Offensive," or "Neither").
 
