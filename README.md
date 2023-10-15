@@ -104,6 +104,7 @@ We use the "berkeley_speech_dataset.csv" to create various three different scena
 > - Configuration for scenario 3: 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian
 
 
+- [ ] Add delight to the experience when all tasks are complete :tada:
 
 
 
