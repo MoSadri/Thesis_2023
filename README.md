@@ -67,10 +67,12 @@ The steps are:
 1. python generate_cv_data.py
 1. python run_cross_validation.py
 
-1. The first program: generate_group_csv.py is used to produce training data with the desired number for each targeted group. This is the same program as before.
+- The first program: generate_group_csv.py is used to produce training data with the desired number for each targeted group. This is the same program as before.
   - Input: ../data/berkeley_speech_dataset.csv
   - Output: ../data/balanced_dataset.csv
-1. The second program: generate_cv_data.py is used to split the files into k+1 pieces, in preparetion for k-fold validation. With one piece used as analysis dataset, and 5 other pieces used as training datasets. This step will be repeated k times so each piece of data will have its chance to be the analysis dataset. This program will also generate the .pkl files needed for each trained dataset. <br>
+ 
+
+- The second program: generate_cv_data.py is used to split the files into k+1 pieces, in preparetion for k-fold validation. With one piece used as analysis dataset, and 5 other pieces used as training datasets. This step will be repeated k times so each piece of data will have its chance to be the analysis dataset. This program will also generate the .pkl files needed for each trained dataset. <br>
 
 - Input: ../data/balanced_dataset.csv
 - Output: 
