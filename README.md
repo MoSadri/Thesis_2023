@@ -92,10 +92,10 @@ We use the "berkeley_speech_dataset.csv" to create various three different scena
 1. Scenario 2: csv files with tweets targeting mostly women
 1. Scenario 3: csv files with tweets targeting a balanced group (including black, women and LGBT group)
 
-Different scenarios can be created by setting different numbers when running the program "generate_group_csv.py". Here are our configuration:
-Configuration for scenario 1: 9000 black, 500 women, 200 trans, 150 gay, 150 lesbian
-Configuration for scenario 2: 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian
-Configuration for scenario 3: 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian
+> [!NOTE] Different scenarios can be created by setting different numbers when running the program "generate_group_csv.py". Here are our configuration:
+> Configuration for scenario 1: 9000 black, 500 women, 200 trans, 150 gay, 150 lesbian
+> Configuration for scenario 2: 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian
+> Configuration for scenario 3: 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian
 
 
 
