@@ -58,7 +58,7 @@ These two files are used for performing k-fold cross-validation.
 Currently, k is set to 5, but users can set it to different numbers to perform k-fold cross-validation.
 
 The steps are:
-python generate_group_csv.py
+python generate_group_csv.py 
 python generate_cv_data.py
 python run_cross_validation.py
 
