@@ -113,18 +113,26 @@ We use the "berkeley_speech_dataset.csv" to create various three different scena
 | Configuration for scenario 2 | 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian |
 | Configuration for scenario 3 | 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian |
 
+> [!NOTE]
+> **Results**
 
-| Scenario            | Group   | Accuracy  | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
-|---------------------|---------|-----------|-------------------|---------------|-----------------|
-| Balanced Distribution | Black | 55.83%    | 24.65%            | 79.22%        | 37.60%          |
-| Balanced Distribution | Women | 60.80%    | 27.88%            | 84.05%        | 41.87%          |
-| Balanced Distribution | LGBT  | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
-| Original Data        | Black | 55.82%    | 24.65%            | 79.21%        | 37.60%          |
-| Original Data        | Women | 60.81%    | 27.88%            | 84.05%        | 41.87%          |
-| Original Data        | LGBT  | 74.70%    | 37.25%            | 73.90%        | 49.53%          |
-| Confusion Matrix: Original Hate+Offensive vs. Balanced Hate | Black | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
-| Confusion Matrix: Original Hate+Offensive vs. Balanced Hate | Women | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
-| Confusion Matrix: Original Hate+Offensive vs. Balanced Hate | LGBT  | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
+| Scenario                    | Group   | Accuracy  | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
+|----------------------------|---------|-----------|-------------------|---------------|-----------------|
+| Balanced Distribution       | Black   | 55.83%    | 24.65%            | 79.22%        | 37.60%          |
+| Balanced Distribution       | Women   | 60.80%    | 27.88%            | 84.05%        | 41.87%          |
+| Balanced Distribution       | LGBT    | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
+| Original Data              | Black   | 55.82%    | 24.65%            | 79.21%        | 37.60%          |
+| Original Data              | Women   | 60.81%    | 27.88%            | 84.05%        | 41.87%          |
+| Original Data              | LGBT    | 74.70%    | 37.25%            | 73.90%        | 49.53%          |
+| Confusion Matrix: Original Hate+Offensive vs. Balanced Hate | Black   | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
+| Confusion Matrix: Original Hate+Offensive vs. Balanced Hate | Women   | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
+| Confusion Matrix: Original Hate+Offensive vs. Balanced Hate | LGBT    | 74.69%    | 37.24%            | 73.89%        | 49.52%          |
+| Women Configuration         | Black   | (Accuracy)   | (Precision)      | (Recall)      | (F1 Score)      |
+| Women Configuration         | Women   | 60.80%    | 27.88%            | 84.05%        | 41.87%          |
+| Women Configuration         | LGBT    | (Accuracy)   | (Precision)      | (Recall)      | (F1 Score)      |
+| Black Configuration         | Black   | 55.82%    | 24.65%            | 79.21%        | 37.60%          |
+| Black Configuration         | Women   | (Accuracy)   | (Precision)      | (Recall)      | (F1 Score)      |
+| Black Configuration         | LGBT    | (Accuracy)   | (Precision)      | (Recall)      | (F1 Score)      |
 
 
 
