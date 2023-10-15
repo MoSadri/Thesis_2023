@@ -115,11 +115,13 @@ We use the "berkeley_speech_dataset.csv" to create various three different scena
 
 > [!NOTE]
 > **Results**
+
 | Scenario                    | Group   | Accuracy  | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
 |----------------------------|---------|-----------|-------------------|---------------|-----------------|
 | Balanced Distribution       | Black   | 55.83%    | 24.65%            | 79.22%        | 37.60%          |
 | Black-focused Distribution  | Black   | 75.00%    | 88.73%            | 50.10%        | 64.03%          |
 | Women-focused Distribution  | Women   | 60.80%    | 27.88%            | 84.05%        | 41.87%          |
+
 
 
 
