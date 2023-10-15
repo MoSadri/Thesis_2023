@@ -81,16 +81,16 @@ Output: ../cv_output/balanced_cvresults_fold1.txt, ../cv_output/balanced_cvresul
 > [!NOTE] Our program uses the newest Python version (3.11 at the time of our testing), which is an update from version 2.7 in the original TDavidson run. We obtained the trained data files (the .pkl files) from TDavidson's repository, repickled so they can be used in our program. These files are prefixed with "original_" and located in the > data folder. Unfortunately, these files are trained models, and the CSV files used for generating these files aren't available, so it is not possible to modify these files.
 
 TDavidson also uses an analysis set named "labeled_data.csv," which is a set of tweets with manually labeled classes ("Hate," "Offensive," or "Neither").
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
+
+> [!IMPORTANT]
+> In order to test with different data, we downloaded a new set of data from Berkeley researchers ([link](https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech)), and name it "berkeley_speech_dataset.csv", which is put into the data folder as well. 
 
 
-In order to test with different data, we downloaded a new set of data from Berkeley researchers ([link](https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech)), and name it "berkeley_speech_dataset.csv", which is put into the data folder as well. 
 
 We use the "berkeley_speech_dataset.csv" to create various three different scenarios to observe the effectiveness of this speech classifier program.
-Scenario 1: csv files with tweets targeting mostly black
-Scenario 2: csv files with tweets targeting mostly women
-Scenario 3: csv files with tweets targeting a balanced group (including black, women and LGBT group)
+1. Scenario 1: csv files with tweets targeting mostly black
+1. Scenario 2: csv files with tweets targeting mostly women
+1. Scenario 3: csv files with tweets targeting a balanced group (including black, women and LGBT group)
 
 Different scenarios can be created by setting different numbers when running the program "generate_group_csv.py". Here are our configuration:
 Configuration for scenario 1: 9000 black, 500 women, 200 trans, 150 gay, 150 lesbian
