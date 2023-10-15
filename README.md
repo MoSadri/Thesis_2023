@@ -10,6 +10,7 @@ There are 6 files in the "speech_classifier" folder:
 * speech_classifier.py
 * generate_cv_data.py
 * run_cross_validation.py
+* link to the [data.zip](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip)
 
 
 All .py files can be executed with a simple command like this:
