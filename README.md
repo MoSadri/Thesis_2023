@@ -20,15 +20,16 @@ The first program: **generate_group_csv.py** reads the speech data available in 
 - Input: ../data/berkeley_speech_dataset.csv
 - Output: ../data/balanced_dataset.csv
 
-The second program: **count_groups.py** is a simple script to print out the actual number of groups resulting from the first program. As there are overlaps between different targeted groups, it is useful to obtain the percentage of each targeted group produced.
+The second program: **count_groups.py** is a simple script to print out the actual number of groups resulting from the first program. <br>
+As there are overlaps between different targeted groups, it is useful to obtain the percentage of each targeted group produced.
 
-Input: ../data/balanced_dataset.csv
-Output: ../output/balanced_groups_counts.txt
+- Input: ../data/balanced_dataset.csv
+- Output: ../output/balanced_groups_counts.txt
 
-The third program: **generate_trained_model.ipynb** is a Jupyter Notebook script to generate the trained model that needs to be passed into the speech classifier program. This program will produce 5 files with a .pkl extension, which need to be passed to speech_classifier.py.
+The third program: **generate_trained_model.ipynb** is a Jupyter Notebook script to generate the trained model that needs to be passed into the speech classifier program. <br> This program will produce 5 files with a .pkl extension, which need to be passed to speech_classifier.py.
 
-Input: ../data/balanced_dataset.csv
-Output:
+- Input: ../data/balanced_dataset.csv
+- Output:
 
 1. ../data/balanced_model.pkl
 2. ../data/balanced_tfidf.pkl
@@ -36,15 +37,15 @@ Output:
 4. ../data/balanced_pos.pkl
 5. ../data/balanced_oth.pkl
 
-The file: **speech_classifier.py** is the actual speech classifier program. It analyzes all the speech files in the input folder and produces the number of hate speech instances detected in the input files. It is currently also set to analyze a pre-labeled data file named "labeled_data.csv." This file was created by TDavidson to test the program's performance. We use this same file to determine the accuracy, precision, recall, and F1 score of our program.
+The file: **speech_classifier.py** is the actual speech classifier program. It analyzes all the speech files in the input folder and produces the number of hate speech instances detected in the input files. It is currently also set to analyze a pre-labeled data file named "labeled_data.csv."  <br> This file was created by TDavidson to test the program's performance. We use this same file to determine the accuracy, precision, recall, and F1 score of our program.
 
 Trained model files:
 
 1. ../data/balanced_model.pkl
-2. ../data/balanced_tfidf.pkl
-3. ../data/balanced_idf.pkl
-4. ../data/balanced_pos.pkl
-5. ../data/balanced_oth.pkl
+1. ../data/balanced_tfidf.pkl
+1. ../data/balanced_idf.pkl
+1. ../data/balanced_pos.pkl
+1. ../data/balanced_oth.pkl
 
 
 **Input CSV files to be analyzed**: all files located in ../input
