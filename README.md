@@ -48,33 +48,36 @@ Trained model files:
 1. ../data/balanced_oth.pkl
 
 
-**Input CSV files to be analyzed**: all files located in ../input
-**Output**: The program will produce one output file for every file it finds in the input directory, listing the predicted class for each tweet/text within each file. It will also generate two PDF files and two TXT files. The PDF files are named "original_hate_vs_balanced_hate.pdf" and "original_hate+offensive_vs_balanced_hate.pdf" and contain confusion matrices when analyzing "labeled_data.csv." 
+- Input CSV files to be analyzed: all files located in ../input
+- Output: The program will produce one output file for every file it finds in the input directory, listing the predicted class for each tweet/text within each file.
+- <br> It will also generate two PDF files and two TXT files. The PDF files are named "original_hate_vs_balanced_hate.pdf" and "original_hate+offensive_vs_balanced_hate.pdf" and contain confusion matrices when analyzing "labeled_data.csv." 
 
-The TXT files are named "original_hate_vsbalanced_hate.txt" and "original_hate+offensive_vs_balanced_hate.txt" and contain quality scores of the classifier program. We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
+The TXT files are named "original_hate_vsbalanced_hate.txt" and "original_hate+offensive_vs_balanced_hate.txt" and contain quality scores of the classifier program. <br> We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
 
 **Cross Validation**:
-There are two files: generate_cv_data.py and run_cross_validation.py. 
-These two files are used for performing k-fold cross-validation. 
-Currently, k is set to 5, but users can set it to different numbers to perform k-fold cross-validation.
+There are two files: 
+1. generate_cv_data.py and run_cross_validation.py. 
+- These two files are used for performing k-fold cross-validation. 
+- Currently, k is set to 5, but users can set it to different numbers to perform k-fold cross-validation.
 
 The steps are:
-python generate_group_csv.py 
-python generate_cv_data.py
-python run_cross_validation.py
+1. python generate_group_csv.py 
+1. python generate_cv_data.py
+1. python run_cross_validation.py
 
-Input: ../data/berkeley_speech_dataset.csv
-Output: ../data/balanced_dataset.csv
+- Input: ../data/berkeley_speech_dataset.csv
+- Output: ../data/balanced_dataset.csv
 
 
-**Analysis sets**: ../cv_data/balanced_cvanalysis_fold1.csv, ../cv_data/balanced_cvanalysis_fold2.csv, ... ../cv_data/balanced_cvanalysis_foldk.csv
-**Training sets**: balanced_cvtrain_fold1.csv, balanced_cvtrain_fold2.csv, ... balanced_cvtrain_foldk.csv
-**Pkl files**: balanced_cvtrain_fold1_idf.pkl, balanced_cvtrain_fold1_model.pkl, balanced_cvtrain_fold1_oth.pkl, balanced_cvtrain_fold1_pos.pkl, balanced_cvtrain_fold1_tfidf.pkl, ... balanced_cvtrain_foldk_tfidf.pkl
+- **Analysis sets**: ../cv_data/balanced_cvanalysis_fold1.csv, ../cv_data/balanced_cvanalysis_fold2.csv, ... ../cv_data/balanced_cvanalysis_foldk.csv
+- **Training sets**: balanced_cvtrain_fold1.csv, balanced_cvtrain_fold2.csv, ... balanced_cvtrain_foldk.csv
+- **Pkl files**: balanced_cvtrain_fold1_idf.pkl, balanced_cvtrain_fold1_model.pkl, balanced_cvtrain_fold1_oth.pkl, balanced_cvtrain_fold1_pos.pkl, balanced_cvtrain_fold1_tfidf.pkl, ... balanced_cvtrain_foldk_tfidf.pkl
 
-**Program for running the actual cross-validation**: run_cross_validation.py will run through all the analysis sets and training sets for each fold and generate quality scores for each file. These quality scores include accuracy, precision, recall, and F1 score.
+**Program for running the actual cross-validation**: <br>
+run_cross_validation.py will run through all the analysis sets and training sets for each fold and generate quality scores for each file. These quality scores include accuracy, precision, recall, and F1 score.
 
-Input: "Analysis sets" and "Training sets" generated from above
-Output: ../cv_output/balanced_cvresults_fold1.txt, ../cv_output/balanced_cvresults_fold2.txt, ... ../cv_output/balanced_cvresults_foldk.txt
+- Input: "Analysis sets" and "Training sets" generated from above
+- Output: ../cv_output/balanced_cvresults_fold1.txt, ../cv_output/balanced_cvresults_fold2.txt, ... ../cv_output/balanced_cvresults_foldk.txt
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
