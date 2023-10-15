@@ -4,12 +4,12 @@
 
 There are 6 files in the "speech_classifier" folder:
 
-* generate_group_csv.py
-* count_groups.py
-* generate_trained_model.ipynb
-* speech_classifier.py
-* generate_cv_data.py
-* run_cross_validation.py
+1. generate_group_csv.py
+1. count_groups.py
+1. generate_trained_model.ipynb
+1. peech_classifier.py
+1. generate_cv_data.py
+1. run_cross_validation.py
 * link to the [data.zip  v1.0.0](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip)
 * note that the files in the input folder are aligned with labeled_data.csv; however, they include the integration of target group labels.
 
