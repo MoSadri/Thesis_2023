@@ -81,6 +81,8 @@ Output: ../cv_output/balanced_cvresults_fold1.txt, ../cv_output/balanced_cvresul
 > [!NOTE] Our program uses the newest Python version (3.11 at the time of our testing), which is an update from version 2.7 in the original TDavidson run. We obtained the trained data files (the .pkl files) from TDavidson's repository, repickled so they can be used in our program. These files are prefixed with "original_" and located in the > data folder. Unfortunately, these files are trained models, and the CSV files used for generating these files aren't available, so it is not possible to modify these files.
 
 TDavidson also uses an analysis set named "labeled_data.csv," which is a set of tweets with manually labeled classes ("Hate," "Offensive," or "Neither").
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
 
 
 In order to test with different data, we downloaded a new set of data from Berkeley researchers ([link](https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech)), and name it "berkeley_speech_dataset.csv", which is put into the data folder as well. 
