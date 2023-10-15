@@ -53,7 +53,9 @@ Trained model files:
 The TXT files are named "original_hate_vsbalanced_hate.txt" and "original_hate+offensive_vs_balanced_hate.txt" and contain quality scores of the classifier program. We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
 
 **Cross Validation**:
-There are two files: generate_cv_data.py and run_cross_validation.py. These two files are used for performing k-fold cross-validation. Currently, k is set to 5, but users can set it to different numbers to perform k-fold cross-validation.
+There are two files: generate_cv_data.py and run_cross_validation.py. 
+These two files are used for performing k-fold cross-validation. 
+Currently, k is set to 5, but users can set it to different numbers to perform k-fold cross-validation.
 
 The steps are:
 python generate_group_csv.py
