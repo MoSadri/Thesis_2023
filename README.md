@@ -10,7 +10,7 @@ There are 6 files in the "speech_classifier" folder:
 1. peech_classifier.py
 1. generate_cv_data.py
 1. run_cross_validation.py
-* link to the [data.zip  v1.0.0](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip)
+* The "data" folder referenced below is available in [data.zip  v1.0.0](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip)
 * note that the files in the input folder are aligned with labeled_data.csv; however, they include the integration of target group labels.
 
 
@@ -53,9 +53,9 @@ Trained model files:
 
 - Input CSV files to be analyzed: all files located in ../input
 - Output: The program will produce one output file for every file it finds in the input directory, listing the predicted class for each tweet/text within each file.
-- It will also generate two PDF files and two TXT files. The PDF files are named "original_hate_vs_balanced_hate.pdf" and "original_hate+offensive_vs_balanced_hate.pdf" and contain confusion matrices when analyzing "labeled_data.csv." 
+- It will also generate two PDF files and two TXT files. The PDF files are named "original_hate_vs_balanced_hate.pdf" and "original_hate+offensive_vs_balanced_hate.pdf" and contain confusion matrices when analyzing "labeled_data.csv." The TXT files are named "original_hate_vsbalanced_hate.txt" and "original_hate+offensive_vs_balanced_hate.txt" and contain quality scores of the classifier program.
 
-The TXT files are named "original_hate_vsbalanced_hate.txt" and "original_hate+offensive_vs_balanced_hate.txt" and contain quality scores of the classifier program. <br> We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
+<br> We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
 
 **Cross Validation**:
 There are two files
@@ -73,7 +73,7 @@ The steps are:
   - Output: ../data/balanced_dataset.csv
  
 
-- **The second program**: generate_cv_data.py is used to split the files into k+1 pieces, in preparetion for k-fold validation. With one piece used as analysis dataset, and 5 other pieces used as training datasets. This step will be repeated k times so each piece of data will have its chance to be the analysis dataset. This program will also generate the .pkl files needed for each trained dataset. <br>
+- **The second program**: generate_cv_data.py is used to split the files into k+1 pieces, in preparation for k-fold validation. With one piece used as analysis dataset, and 5 other pieces used as training datasets. This step will be repeated k times so each piece of data will have its chance to be the analysis dataset. This program will also generate the .pkl files needed for each trained dataset. <br>
   - Input: ../data/balanced_dataset.csv
   - Output: 
 Analysis sets: ../cv_data/balanced_cvanalysis_fold1.csv ../cv_data/balanced_cvanalysis_fold2.csv ... ../cv_data/balanced_cvanalysis_foldk.csv <br>
@@ -81,7 +81,7 @@ Training sets: balanced_cvtrain_fold1.csv balanced_cvtrain_fold2.csv ... balance
 Pkl files: balanced_cvtrain_fold1_idf.pkl balanced_cvtrain_fold1_model.pkl balanced_cvtrain_fold1_oth.pkl balanced_cvtrain_fold1_pos.pkl balanced_cvtrain_fold1_tfidf.pkl ... balanced_cvtrain_foldk_tfidf.pkl <br>
 
 
-**Program for running the actual cross-validation**: <br>
+- Program for running the actual cross-validation**: <br>
 run_cross_validation.py will run through all the analysis sets and training sets for each fold and generate quality scores for each file. These quality scores include accuracy, precision, recall, and F1 score.
 
 - Input: "Analysis sets" and "Training sets" generated from above
@@ -91,7 +91,7 @@ run_cross_validation.py will run through all the analysis sets and training sets
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 > [!IMPORTANT]
 > **Data Used**
-> - Our program uses the newest Python version (3.11 at the time of our testing), which is an update from version 2.7 in the original TDavidson run. We obtained the trained data files (the .pkl files) from TDavidson's repository, repickled so they can be used in our program. These files are prefixed with "original_" and located in the > data folder. Unfortunately, these files are trained models, and the CSV files used for generating these files aren't available, so it is not possible to modify these files.
+> - Our program uses the newest Python version (3.11 at the time of our testing), which is an update from version 2.7 in the original TDavidson run. We obtained the trained data files (the .pkl files) from TDavidson's repository, repickled so they can be used in our program. These files are prefixed with "original_" and located in the [data folder](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip). Unfortunately, these files are trained models, and the CSV files used for generating these files aren't available, so it is not possible to modify these files.
 
 TDavidson also uses an analysis set named "labeled_data.csv," which is a set of tweets with manually labeled classes ("Hate," "Offensive," or "Neither").
 
@@ -100,13 +100,13 @@ TDavidson also uses an analysis set named "labeled_data.csv," which is a set of 
 
 
 
-We use the "berkeley_speech_dataset.csv" to create various three different scenarios to observe the effectiveness of this speech classifier program.
+We use the "berkeley_speech_dataset.csv" to create three different scenarios to observe the effectiveness of this speech classifier program.
 1. Scenario 1: csv files with tweets targeting mostly black
 1. Scenario 2: csv files with tweets targeting mostly women
 1. Scenario 3: csv files with tweets targeting a balanced group (including black, women and LGBT group)
 
 > [!NOTE]
-> Different scenarios can be created by setting different numbers when running the program "generate_group_csv.py". Here are our configuration:
+> Different scenarios can be created by setting different numbers when running the program "generate_group_csv.py". Here are our configurations:
 
 | Scenario                  | Configuration                |
 | :------------------------  | :--------------------------- |
@@ -119,9 +119,9 @@ We use the "berkeley_speech_dataset.csv" to create various three different scena
 
 | Scenario                    | Group   | Accuracy  | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
 |----------------------------|---------|-----------|-------------------|---------------|-----------------|
-| Balanced Distribution       | Balanced   | 55.83%    | 24.65%            | 79.22%        | 37.60%          |
-| Black-focused Distribution  | Black   | 75.00%    | 88.73%            | 50.10%        | 64.03%          |
-| Women-focused Distribution  | Women   | 60.80%    | 27.88%            | 84.05%        | 41.87%          |
+| Scenario 3       | Balanced   | 55.83%    | 24.65%            | 79.22%        | 37.60%          |
+| Scenario 1  | Black   | 75.00%    | 88.73%            | 50.10%        | 64.03%          |
+| Scenario 2  | Women   | 60.80%    | 27.88%            | 84.05%        | 41.87%          |
 
 
 
