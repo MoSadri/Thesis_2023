@@ -81,7 +81,7 @@ Training sets: balanced_cvtrain_fold1.csv balanced_cvtrain_fold2.csv ... balance
 Pkl files: balanced_cvtrain_fold1_idf.pkl balanced_cvtrain_fold1_model.pkl balanced_cvtrain_fold1_oth.pkl balanced_cvtrain_fold1_pos.pkl balanced_cvtrain_fold1_tfidf.pkl ... balanced_cvtrain_foldk_tfidf.pkl <br>
 
 
-- Program for running the actual cross-validation**: <br>
+- Program for running the actual cross-validation: <br>
 run_cross_validation.py will run through all the analysis sets and training sets for each fold and generate quality scores for each file. These quality scores include accuracy, precision, recall, and F1 score.
 
 - Input: "Analysis sets" and "Training sets" generated from above
