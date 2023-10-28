@@ -7,7 +7,7 @@ There are 6 files in the "speech_classifier" folder:
 1. generate_group_csv.py
 1. count_groups.py
 1. generate_trained_model.ipynb
-1. peech_classifier.py
+1. speech_classifier.py
 1. generate_cv_data.py
 1. run_cross_validation.py
 * The "data" folder referenced below is available in [data.zip  v1.0.0](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip)
