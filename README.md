@@ -122,16 +122,10 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 |------------|--------------|----------|-------------------|---------------|-----------------|
 | Balanced   | Black        | 0.17     | 0.066              | 0.76          | 0.12.1            |
 | Balanced   | Women        | 0.17.61  | 0.078              | 0.60          | 0.12.6            |
-| Balanced   | LGBT         | 0.17     | 0.066              | 0.76          | 0.12.1            |
-| Black      | Black        | ...      | ...               | ...           | ...             |
+| Balanced   | LGBT         | 0.17.80     | 0.0708              | 0.76          | 0.12.1            |
+| Black      | Black        | 0.17      | 0.070               | 0.76          | 0.12.8             |
 | Black      | Women        | ...      | ...               | ...           | ...             |
-| Black      | LGBT         | ...      | ...               | ...           | ...             |
+| Black      | LGBT         | 0.17.25      | 0.08.68        | 0.75.66%           | 15.72%             |
 | Women      | Black        | ...      | ...               | ...           | ...             |
 | Women      | Women        | ...      | ...               | ...           | ...             |
 | Women      | LGBT         | ...      | ...               | ...           | ...             |
-
-
-
-
-
-
