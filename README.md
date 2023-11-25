@@ -11,7 +11,7 @@ There are 6 files in the "speech_classifier" folder:
 1. generate_cv_data.py
 1. run_cross_validation.py
 * The "data" folder referenced below is available in [data.zip  v1.0.0](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip)
-* Note that the files in the input folder are aligned with the original analysis data set of TDavidson (i.e., labeled_data.csv). In addition, the data entries are labeled with target groups in the files in the input folder
+* Note that the files in the input folder are aligned with the original analysis data set of TDavidson (i.e., labeled_data.csv). In addition, the data entries are labeled with target groups in the files in the input folder.
 
 
 All .py files can be executed with a simple command like this:
