@@ -117,12 +117,18 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 > [!NOTE]
 > **Results**
 
-| Scenario                    | Group   | Accuracy  | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
-|----------------------------|---------|-----------|-------------------|---------------|-----------------|
-| Scenario 1  | Black   | 75.00%    | 88.73%            | 50.10%        | 64.03%          |
-| Scenario 2  | Women   | 60.80%    | 27.88%            | 84.05%        | 41.87%          |
-| Scenario 3       | Balanced   | 55.83%    | 24.65%            | 79.22%        | 37.60%          |
 
+| Scenario   | Target Group | Accuracy | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
+|------------|--------------|----------|-------------------|---------------|-----------------|
+| Balanced   | Black        | 0.75     | 0.89              | 0.50          | 0.64            |
+| Balanced   | Women        | 0.61     | 0.28              | 0.84          | 0.42            |
+| Balanced   | LGBT         | 0.65     | 0.36              | 0.70          | 0.48            |
+| Black      | Black        | ...      | ...               | ...           | ...             |
+| Black      | Women        | ...      | ...               | ...           | ...             |
+| Black      | LGBT         | ...      | ...               | ...           | ...             |
+| Women      | Black        | ...      | ...               | ...           | ...             |
+| Women      | Women        | ...      | ...               | ...           | ...             |
+| Women      | LGBT         | ...      | ...               | ...           | ...             |
 
 
 
