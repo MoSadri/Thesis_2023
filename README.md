@@ -120,12 +120,12 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 
 | Scenario   | Target Group | Accuracy | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
 |------------|--------------|----------|-------------------|---------------|-----------------|
-| Balanced   | Black        | 0.17     | 0.066              | 0.76          | 0.12.1            |
-| Balanced   | Women        | 0.17.61  | 0.078              | 0.60          | 0.12.6            |
-| Balanced   | LGBT         | 0.17.80     | 0.0708              | 0.76          | 0.12.1            |
-| Black      | Black        | 0.17      | 0.070               | 0.76          | 0.12.8             |
-| Black      | Women        | ...      | ...               | ...           | ...             |
-| Black      | LGBT         | 0.17.25      | 0.08.68        | 0.75.66%           | 15.72%             |
-| Women      | Black        | ...      | ...               | ...           | ...             |
-| Women      | Women        | ...      | ...               | ...           | ...             |
-| Women      | LGBT         | ...      | ...               | ...           | ...             |
+| Balanced   | Black        | 17.80%        | 6.59%             | 76.8%          | 12.12%            |
+| Balanced   | Women        | 17.61%        | 7.08%              |60.56%          | 12.68%            |
+| Balanced   | LGBT         | 17.80%        | 7.08              | 76.8%          | 12.12%          |
+| Black      | Black        | 17.25%        | 8.72%             | 75.94%         | 15.84%             |
+| Black      | Women        | 17.53%        | 7.67%             | 66.25%         | 13.78%             |
+| Black      | LGBT         | 17.25%        | 8.68%             | 75.66%         | 15.72%             |
+| Women      | Black        | 55.03%      | 76.47%               | 100%          | 86.21%             |
+| Women      | Women        | 70.29%      | 45.65%               | 80.70%        | 58.33%             |
+| Women      | LGBT         | 68.02%      | 68.98%               | 68.02%         | 68.50%             |
