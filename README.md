@@ -126,7 +126,7 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 | Women      | Black        | 62%      | 96%               | 55%          | 70%             |
 | Women      | Women        | 75%      | 96%               | 71%        | 81%             |
 | Women      | LGBT         | 70%      | 96%               | 68.02%         | 76%            |
-| Balanced   | Black        | 68%        | 94%             | 64%          | 12.12%            |
+| Balanced   | Black        | 68%        | 94%             | 64%          | 76%            |
 | Balanced   | Women        | 83%        | 94%              |84%          | 89%           |
 | Balanced   | LGBT         | 85%        | 95%              | 88%          | 91%          |
 
