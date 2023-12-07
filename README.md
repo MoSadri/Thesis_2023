@@ -1,6 +1,5 @@
 > [!NOTE]
 > This is an extension of the speech classifier program developed by [Thomas Davidson et al.](https://github.com/t-davidson/hate-speech-and-offensive-language/tree/master). As Thomas Davidson's repository is no longer maintained, we decided to create our own, added modifications, and tested it with different datasets, including speech data from [Berkeley](https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech)
->  **<span style="color:blue">456</span>**
 
 
 There are 6 files in the "speech_classifier" folder:
@@ -121,7 +120,7 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 
 | Scenario   | Target Group | Accuracy | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
 |------------|--------------|----------|-------------------|---------------|-----------------|
-| Black      | Black        | 67%        | 91%             | 65%         | 76%             |
+| Black      | Black        |  **<span style="color:blue">456</span>**67%        | 91%             | 65%         | 76%             |
 | Black      | Women        | 74%        | 94%           | 71%         | 81%             |
 | Black      | LGBT         | 84%        | **95%**             | 86%               | 90%             |
 | Women      | Black        | 62%      | 96%               | 55%          | 70%             |
