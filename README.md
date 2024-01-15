@@ -116,6 +116,7 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 
 > [!NOTE]
 > **Results**
+> 
 To derive the results, we calculate the performance metrics using the FP, FN, TN, and TP values, based on the official formulas presented in Chapter 4 of the research.
 
 | Scenario   | Target Group | Accuracy | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
