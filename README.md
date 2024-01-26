@@ -134,7 +134,3 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 | Balanced   | Women        | **83%**        | 94%              |**84%**          | **89%**           |
 | Balanced   | LGBT         | **85%**        | 95%              | **88%**          | **91%**          |
 
-> [!NOTE]
-The process of aggregating cross-validation results and generating a final results table is currently manual. An automated script for this purpose is planned for future updates.
-To derive the results, we calculate the performance metrics using the FP, FN, TN, and TP values, based on the official formulas presented in Chapter 4 of the research.
-
