@@ -116,7 +116,7 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 
 
 > **Results**
-> The results table presented summarizes the performance metrics obtained after running cross-validation on different target groups. To replicate this table:
+The results table presented summarizes the performance metrics obtained after running cross-validation on different target groups. To replicate this table:
 
 1. Run python run_cross_validation.py to perform cross-validation and output the metrics for each fold.
 2. Collect these metrics and calculate the average for each one across all folds.
