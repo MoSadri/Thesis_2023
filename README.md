@@ -14,7 +14,7 @@ There are 6 files in the "speech_classifier" folder:
 * Note that the files in the input folder are aligned with the original analysis data set of TDavidson (i.e., labeled_data.csv). In addition, the data entries are labeled with target groups in the files in the input folder.
 
 
-**All .py files can be executed with a simple command like this:
+All .py files can be executed with a simple command like this:
 **
 ``` python program_name.py ``` 
 
