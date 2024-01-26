@@ -114,10 +114,13 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 | Configuration for scenario 2 | 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian |
 | Configuration for scenario 3 | 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian |
 
-> [!NOTE]
+
 > **Results**
-> 
-To derive the results, we calculate the performance metrics using the FP, FN, TN, and TP values, based on the official formulas presented in Chapter 4 of the research.
+> The results table presented summarizes the performance metrics obtained after running cross-validation on different target groups. To replicate this table:
+
+1. Run python run_cross_validation.py to perform cross-validation and output the metrics for each fold.
+2. Collect these metrics and calculate the average for each one across all folds.
+3. Manually compile these averages into the results table format as shown.
 
 | Scenario   | Target Group | Accuracy | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
 |------------|--------------|----------|-------------------|---------------|-----------------|
@@ -130,4 +133,8 @@ To derive the results, we calculate the performance metrics using the FP, FN, TN
 | Balanced   | Black        | **68%**        | 94%             | 64%          | **76%**            |
 | Balanced   | Women        | **83%**        | 94%              |**84%**          | **89%**           |
 | Balanced   | LGBT         | **85%**        | 95%              | **88%**          | **91%**          |
+
+> [!NOTE]
+The process of aggregating cross-validation results and generating a final results table is currently manual. An automated script for this purpose is planned for future updates.
+To derive the results, we calculate the performance metrics using the FP, FN, TN, and TP values, based on the official formulas presented in Chapter 4 of the research.
 
