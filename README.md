@@ -31,7 +31,7 @@ As there are overlaps between different targeted groups, it is useful to obtain 
 
 The third program: **generate_trained_model.ipynb** is a Jupyter Notebook script to generate the trained model that needs to be passed into the speech classifier program. <br> This program will produce 5 files with a .pkl extension, which need to be passed to speech_classifier.py.
 
-- Data folder: source_csv_path = "../data/berkeley_speech_dataset.csv
+- Data folder: Should be placed in the top-level directory(root directory)
 - Input: ../data/balanced_dataset.csv
 - Output:
 
