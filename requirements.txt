@@ -2,7 +2,6 @@ pandas
 joblib
 scikit-learn
 nltk
-pickle
 matplotlib
 seaborn
 vaderSentiment
