@@ -120,6 +120,9 @@ The results table presented summarizes the performance metrics obtained after ru
 
 Run python **speech_classifer.py** 
 
+- Input: Consists of three sets of scenarios as training datasets, followed by the analysis datasets.
+- Output: Include the number of hate speech instances detected, among other things, plus a compiled table in CSV format for the three scenarios
+
 | Scenario   | Target Group | Accuracy | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
 |------------|--------------|----------|-------------------|---------------|-----------------|
 | Black      | Black        | 67%        | 91%             | **65%**         | **76%**             |
