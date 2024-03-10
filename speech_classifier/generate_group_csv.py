@@ -10,13 +10,14 @@ import numpy as np
 #data_name = 'black' # 9000 black, 500 women, 200 trans, 150 gay, 150 lesbian
 #data_name = 'women' # 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian
 data_name = 'balanced' # 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian
+data_name = 'lgbt'
 
 hate_score_threshold = 0.5 # Score above this is considered hate speech, lower this threshold if you want more speech to be classed hate speech
 num_targeted_asian = 0 # Total asian targeted is 7025, try not to set this higher than this number
 num_targeted_black = 3300 # Max 22899
 num_targeted_white = 0 # Max 9797
 num_targeted_woman = 3300 # Max 27889
-num_targeted_transgender = 2800 # 3326 + 4703 + 2611, combined transgender men + unspecified + women, there may be overlap
+num_targeted_transgender = 2000 # 3326 + 4703 + 2611, combined transgender men + unspecified + women, there may be overlap
 num_targeted_gay = 100 # Max 15465
 num_targeted_lesbian = 500 # Max 6883
 num_targeted_others = 0
