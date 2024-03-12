@@ -1,0 +1,9 @@
+pandas
+joblib
+sklearn
+nltk
+pickle
+matplotlib
+seaborn
+vaderSentiment
+textstat

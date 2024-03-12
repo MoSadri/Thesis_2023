@@ -1,0 +1,8 @@
+Total rows = 10000
+black count = 910, percentage = 9.1%
+trans_men count = 1798, percentage = 17.98%
+trans_unspecified count = 1795, percentage = 17.95%
+trans_women count = 1391, percentage = 13.91%
+women count = 2065, percentage = 20.65%
+gay count = 6060, percentage = 60.6%
+lesbian count = 4711, percentage = 47.11%

@@ -1,0 +1,5 @@
+Total tweets = 480
+Hate = 387
+Offensive = 0
+Neither = 93
+Not Applicable = 0

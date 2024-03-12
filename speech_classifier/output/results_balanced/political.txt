@@ -1,0 +1,5 @@
+Total tweets = 14
+Hate = 8
+Offensive = 0
+Neither = 6
+Not Applicable = 0
