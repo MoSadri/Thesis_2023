@@ -2,7 +2,7 @@
 > This is an extension of the speech classifier program developed by [Thomas Davidson et al.](https://github.com/t-davidson/hate-speech-and-offensive-language/tree/master). As Thomas Davidson's repository is no longer maintained, we decided to create our own, added modifications, and tested it with different datasets, including speech data from [Berkeley](https://huggingface.co/datasets/ucberkeley-dlab/measuring-hate-speech)
 
 
-There are 6 files in the "speech_classifier" folder:
+There are 7 files in the "speech_classifier" folder:
 
 1. generate_group_csv.py
 1. count_groups.py
@@ -10,6 +10,8 @@ There are 6 files in the "speech_classifier" folder:
 1. speech_classifier.py
 1. generate_cv_data.py
 1. run_cross_validation.py
+1. run_all_scenarios.py
+
 * The "data" folder referenced below is available in [data.zip  v1.0.0](https://github.com/MoSadri/Thesis_2023/releases/download/v1.0.0/data.zip)
 * Note that the files in the input folder are aligned with the original analysis data set of TDavidson (i.e., labeled_data.csv). In addition, the data entries are labeled with target groups in the files in the input folder.
 
@@ -49,6 +51,10 @@ Trained model files:
 1. ../data/balanced_idf.pkl
 1. ../data/balanced_pos.pkl
 1. ../data/balanced_oth.pkl
+
+Program file **run_all_scenarios.py** is an automation of the execution of speech_classifier.py for running the 4 pre-configured scenarios, which are black, women, lgbt and balanced scenario. This program will output a table in csv format containing the quality scores of these scenarios.
+Input: speech_classifier.py
+Output: ../output/full_table.csv
 
 
 - Input CSV files to be analyzed: all files located in ../input
