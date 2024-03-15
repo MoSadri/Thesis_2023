@@ -61,7 +61,7 @@ Trained model files:
 <br> We concentrate on just two classes, "hate" or "not hate" in our program (and designed our trained dataset accordingly). Therefore, we produce the file "original_hate_vs_balanced_hate.pdf" by considering all "Offensive" class instances in "labeled_data.csv" as incorrectly classified. The second file, "original_hate+offensive_vs_balanced_hate.pdf," treats all "Hate" and "Offensive" class instances the same as "Hate," resulting in higher accuracy.
 
 
-Program file **run_all_scenarios.py** is an automation of the execution of speech_classifier.py for running the 4 pre-configured scenarios, which are black, women, lgbt and balanced scenario. This program will output a table in csv format containing the quality scores of these scenarios.
+The file **run_all_scenarios.py** is an automation of the execution of speech_classifier.py for running the 4 pre-configured scenarios, which are black, women, lgbt and balanced scenario. This program will output a table in csv format containing the quality scores of these scenarios.
 Input: speech_classifier.py
 Output: ../output/full_table.csv
 
