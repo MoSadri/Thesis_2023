@@ -62,8 +62,8 @@ Trained model files:
 
 
 The file **run_all_scenarios.py** is an automation of the execution of speech_classifier.py for running the 4 pre-configured scenarios, which are black, women, lgbt and balanced scenario. This program will output a table in csv format containing the quality scores of these scenarios.
-Input: speech_classifier.py
-Output: ../output/full_table.csv
+- Input: speech_classifier.py
+- Output: ../output/full_table.csv
 
 
 **Cross Validation**:
