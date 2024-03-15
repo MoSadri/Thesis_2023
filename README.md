@@ -125,9 +125,7 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 
 
 > **Results**
-The results table presented summarizes the performance metrics obtained after running cross-validation on different target groups. To replicate this table:
-
-Run python **speech_classifer.py** 
+The results table presented summarizes the performance metrics obtained after running cross-validation on different target groups. 
 
 - Input: Consists of three sets of scenarios as training datasets, followed by the analysis datasets.
 - Output: Include the number of hate speech instances detected, among other things, plus a compiled table in CSV format for the three scenarios
