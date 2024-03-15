@@ -140,4 +140,6 @@ Run python **speech_classifer.py**
 | Balanced   | Black        | **68%**        | 94%             | 64%          | **76%**            |
 | Balanced   | Women        | **83%**        | 94%              |**84%**          | **89%**           |
 | Balanced   | LGBT         | **85%**        | 95%              | **88%**          | **91%**          |
-
+| LGBT   | Black        | 70%       | **87%**             | 72%          | **79%**            |
+| LGBT   | Women        | 77%       | **87%**              |83%          | **85%**           |
+| LGBT   | LGBT         | 87%        | 92%              | **93%**          | **93%**          |
