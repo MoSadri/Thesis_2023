@@ -121,7 +121,8 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 | :------------------------  | :--------------------------- |
 | Configuration for scenario 1 | 9000 black, 500 women, 200 trans, 150 gay, 150 lesbian |
 | Configuration for scenario 2 | 9000 women, 500 black, 200 trans, 150 gay, 150 lesbian |
-| Configuration for scenario 3 | 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian |
+| Configuration for scenario 3 | 15000 LGBT, 3300 black, 3300 women  |
+| Configuration for scenario 4 | 3300 black, 3300 women, 2800 trans, 100 gay, 500 lesbian |
 
 
 > **Results**
@@ -138,9 +139,10 @@ The results table presented summarizes the performance metrics obtained after ru
 | Women      | Black        | 62%      | **96%**               | 55%          | 70%             |
 | Women      | Women        | 75%      | **96%**               | 71%        | 81%             |
 | Women      | LGBT         | 70%      | **96%**               | 68%         | 76%            |
-| Balanced   | Black        | **68%**        | 94%             | 64%          | **76%**            |
-| Balanced   | Women        | **83%**        | 94%              |**84%**          | **89%**           |
-| Balanced   | LGBT         | **85%**        | 95%              | **88%**          | **91%**          |
 | LGBT   | Black        | 70%       | **87%**             | 72%          | **79%**            |
 | LGBT   | Women        | 77%       | **87%**              |83%          | **85%**           |
 | LGBT   | LGBT         | 87%        | 92%              | **93%**          | **93%**          |
+| Balanced   | Black        | **68%**        | 94%             | 64%          | **76%**            |
+| Balanced   | Women        | **83%**        | 94%              |**84%**          | **89%**           |
+| Balanced   | LGBT         | **85%**        | 95%              | **88%**          | **91%**          |
+
