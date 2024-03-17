@@ -127,8 +127,8 @@ We use the "berkeley_speech_dataset.csv" to create three different scenarios to 
 
 > **Results**
 The results table presented summarizes the performance metrics obtained after running cross-validation on different target groups. 
-
-- Input: Consists of three sets of scenarios as training datasets, followed by the analysis datasets.
+Execute **run_all_scenarios.py** to get the results table below
+- Input: Consists of four sets of scenarios as training datasets, followed by the analysis datasets
 - Output: Include the number of hate speech instances detected, among other things, plus a compiled table in CSV format for the three scenarios
 
 | Scenario   | Target Group | Accuracy | Precision (Hate) | Recall (Hate) | F1 Score (Hate) |
