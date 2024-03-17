@@ -112,7 +112,8 @@ TDavidson also uses an analysis set named "labeled_data.csv," which is a set of 
 We use the "berkeley_speech_dataset.csv" to create three different scenarios to observe the effectiveness of this speech classifier program.
 1. Scenario 1: csv files with tweets targeting mostly black
 1. Scenario 2: csv files with tweets targeting mostly women
-1. Scenario 3: csv files with tweets targeting a balanced group (including black, women and LGBT group)
+1. Scenario 3: csv files with tweets targeting mostly LGBT
+1. Scenario 4: csv files with tweets targeting a balanced group (including black, women and LGBT group)
 
 > [!NOTE]
 > Different scenarios can be created by setting different numbers when running the program "generate_group_csv.py". Here are our configurations:
